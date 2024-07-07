@@ -61,11 +61,12 @@ const Quiz = () => {
   };
 
   return (
-    <div className='container'>
-      {result? <>
+    <div className='game-container'>
+      {result?
+      <div className='results'>
         <h2>You Scored {score} out of {data.length}</h2>
         <button onClick={reset}>Reset</button>
-      </>: <>
+      </div>: <>
       <div className='index'>Question {index + 1} of {data.length}</div>
          <h2 className='questiion-text'>{question.question}</h2>
          <ul>
@@ -80,8 +81,8 @@ const Quiz = () => {
             ))}
          </ul>
          <button onClick={nextQuestion} className="next-button">Next</button>
-         <img className="game-left-anim" src="./metalhead.png" alt="Metalhead" />
-         <img className="game-right-anim" src="./interviewer.png" alt="Interviewer" />
+         <img className="image-left game-left-img" src="./metalhead.png" alt="Metalhead" />
+         <img className="image-right game-right-img" src="./interviewer.png" alt="Interviewer" />
       </>}
     </div>
 

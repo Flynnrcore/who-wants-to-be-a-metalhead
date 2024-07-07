@@ -6,14 +6,12 @@ import Quiz from './components/Quiz';
 function App() {
 
   return (
-    <div className="main">
       <HashRouter>
         <Routes>
           <Route path="*" element={<MainPage />} />
           <Route path="/game" element={<Quiz />} />
           </Routes>
       </HashRouter>
-    </div>
   );
 }
 
