@@ -1,0 +1,29 @@
+#root {
+  text-align: center;
+}
+
+.main {
+  width: 1000px;
+  background-color: #222831;
+}
+
+.image-left, .image-right {
+  width: 400px;
+  opacity: 0;
+}
+
+.image-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.image-right {
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+}
+
+button:active {
+  scale: 0.9;
+}
