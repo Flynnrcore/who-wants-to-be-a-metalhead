@@ -11,7 +11,7 @@ const MainPage = () => {
   return (
       <div className="start-container">
        <div className="app-name">
-          <img className="logo" src="./src/assets/circle.png" alt="App Logo" />
+          <img className="logo" src="./circle.png" alt="App Logo" />
           <h1>
            WHO WANTS
   TO BE
