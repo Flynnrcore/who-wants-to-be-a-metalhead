@@ -80,8 +80,8 @@ const Quiz = () => {
             ))}
          </ul>
          <button onClick={nextQuestion} className="next-button">Next</button>
-         <img className="game-left-anim" src="/metalhead.png" alt="Metalhead" />
-         <img className="game-right-anim" src="/interviewer.png" alt="Interviewer" />
+         <img className="game-left-anim" src="./metalhead.png" alt="Metalhead" />
+         <img className="game-right-anim" src="./interviewer.png" alt="Interviewer" />
       </>}
     </div>
 

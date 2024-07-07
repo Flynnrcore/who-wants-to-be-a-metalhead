@@ -11,7 +11,7 @@ const MainPage = () => {
   return (
       <div className="start-container">
        <div className="app-name">
-          <img className="logo" src="src/assets/circle.png" alt="App Logo" />
+          <img className="logo" src="./src/assets/circle.png" alt="App Logo" />
           <h1>
            WHO WANTS
   TO BE
@@ -19,8 +19,8 @@ const MainPage = () => {
           </h1>
        </div>
        <div className="game-controls">
-          <img className="image-left main-left-anim" src="/metalhead.png" alt="Metalhead" />
-          <img className="image-right main-right-anim" src="/interviewer.png" alt="Interviewer" />
+          <img className="image-left main-left-anim" src="./metalhead.png" alt="Metalhead" />
+          <img className="image-right main-right-anim" src="./interviewer.png" alt="Interviewer" />
           <button onClick={handleStartClick} className="start-button">START</button>
        </div>
       </div>
