@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import './Quiz.css';
+import Result from './Result';
 import { data } from '../assets/data';
 
 const Quiz = () => {
@@ -65,6 +66,7 @@ const Quiz = () => {
       {result?
       <div className='results'>
         <h2>You Scored {score} out of {data.length}</h2>
+        <Result results={score} maxQuestions={data.length} />
         <button onClick={reset}>Reset</button>
       </div>: <>
       <div className='index'>Question {index + 1} of {data.length}</div>
