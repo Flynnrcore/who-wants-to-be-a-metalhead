@@ -34,4 +34,19 @@ export const data = [
     options: ['Любе', 'Kiss', 'Rammstein', 'Children of Bodom'],
     answer: 3,
   },
+  {
+  question: 'Какая группа любит выступать на сцене покрытой коврами?',
+  options: ['System of a Down', 'TOOL', 'Montley Crue', 'Prodigy'],
+  answer: 1,
+  },
+  {
+    question: 'Лого какой группы специально нарисовали левой рукой (мелком) хотя автор был правша?',
+    options: ['Asking Alexandria', 'Atreyu', 'Phinehas', 'Korn'],
+    answer: 4,
+    },
+  {
+    question: 'Какая группа ввела в моду кожаную одежду и шипы, ставшие символом метал-культуры?',
+    options: ['Black Sabbath', 'Judas Priest', 'DIO', 'KISS'],
+    answer: 2,
+  },
 ];
