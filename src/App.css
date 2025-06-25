@@ -14,26 +14,36 @@
   bottom: 0;
 }
 
+.result-status {
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+
 @media (min-width: 1024px) {
   .image-left, .image-right {
     width: 400px;
   }
+
+  .button {
+    font-size: 40px;
+  }
+
+  .result-status {
+    font-size: 40px;
+   }
 }
 
 button {
   z-index: 10;
-  width: 350px;
-  max-width: 70vw;
-  height: 79px;
-  margin-top: 5%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  width: 300px;
+  height: 80px;
   background: #393E46;
-  border: 1px solid #EEEEEE;
   border-radius: 22px;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
   color: #EEEEEE;
 }
 

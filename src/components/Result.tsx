@@ -1,3 +1,20 @@
+import { calcResultPerсent } from "../utils/calcResulPersent";
+
+interface ResultProps {
+  results: number;
+  maxQuestions: number;
+}
+
+interface ResultImageData {
+  img: string;
+  text: string;
+}
+
+const resultStatus = {
+  bad: 'начинающий рокер',
+  neutral: 'Метталист базовый',
+  good: 'RockStar'
+};
 
 const resultImgMap = {
   bad: './bad_result.webp',
@@ -5,35 +22,26 @@ const resultImgMap = {
   good: './god_result.webp',
 };
 
-const calcResultPerсent = (correctAnswers: number, totalQuestions: number): number => {
-  if (correctAnswers === 0) {
-    return 0;
-  }
-  return totalQuestions / correctAnswers * 100;
-}
-
-const getResultImage = (resultScore: number): string => {
+const getResultImage = (resultScore: number): ResultImageData => {
   if (resultScore <= 40) {
-    return resultImgMap.bad;
+    return { img: resultImgMap.bad, text: resultStatus.bad };
   } else if (resultScore <= 80) {
-    return resultImgMap.neutral;
+    return { img: resultImgMap.neutral, text: resultStatus.neutral };
   } else {
-    return resultImgMap.good;
+    return { img: resultImgMap.good, text: resultStatus.good };
   }
-}
-
-interface ResultProps {
-  results: number;
-  maxQuestions: number;
-}
+};
 
 const Result = ({ results, maxQuestions }: ResultProps) => {
   const resultScore = calcResultPerсent(maxQuestions, results);
-  const resultImg = getResultImage(resultScore);
+  const { img, text } = getResultImage(resultScore);
 
   return (
-    <img style={{width: '300px'}} src={resultImg} alt='metalhead emotion'></img>
-  )
+    <div style={{ textAlign: 'center'}}>
+      <h3 className="result-status">Вы {text}!</h3>
+      <img style={{ width: '300px' }} src={img} alt='metalhead emotion' />
+    </div>
+  );
 };
 
 export default Result;

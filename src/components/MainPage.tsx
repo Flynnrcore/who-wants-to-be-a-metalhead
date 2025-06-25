@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
   const navigate = useNavigate();
+
   
   const handleStartClick = () => {
       navigate('/game');
@@ -21,7 +22,7 @@ const MainPage = () => {
        <div className="game-controls">
           <img className="image-left main-left-img" src="./metalhead.webp" alt="Metalhead" />
           <img className="image-right main-right-img" src="./interviewer.webp" alt="Interviewer" />
-          <button onClick={handleStartClick} className="start-button">START</button>
+          <button onClick={handleStartClick} className="start-button">старт</button>
        </div>
       </div>
   );
